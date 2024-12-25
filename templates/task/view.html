@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>View Task</h2>
+    <p><strong>ID:</strong> {{ task.id }}</p>
+    <p><strong>Title:</strong> {{ task.title }}</p>
+    <p><strong>Project ID:</strong> {{ task.project_id }}</p>
+    <p><strong>Column ID:</strong> {{ task.column_id }}</p>
+    <p><strong>User ID:</strong> {{ task.user_id }}</p>
+    <p><strong>Description:</strong> {{ task.description }}</p>
+    <p><strong>Status:</strong> {{ task.status }}</p>
+    <p><strong>Created At:</strong> {{ task.created_at }}</p>
+    <p><strong>Updated At:</strong> {{ task.updated_at }}</p>
+    <a href="/task/">Back to Tasks</a>
+{% endblock %}

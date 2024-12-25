@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h2>View Column</h2>
+    <p><strong>ID:</strong> {{ column.id }}</p>
+    <p><strong>Title:</strong> {{ column.title }}</p>
+    <p><strong>Created At:</strong> {{ column.created_at }}</p>
+    <p><strong>Updated At:</strong> {{ column.updated_at }}</p>
+    <a href="/column/">Back to Columns</a>
+{% endblock %}
